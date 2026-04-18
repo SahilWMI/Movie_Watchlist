@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    color: #6B7280;
+    color: white;
+    background-color: #121212;
     font-size: 14px;
     font-family: Inter,sans-serif;
     font-weight: normal;
@@ -16,13 +17,11 @@ h1 {
 }
 h2 {
     font-size: 1.438rem;
-    color: #111827;
     font-weight: 500;
 }
 
 span {
     font-size: 0.857rem;
-    color: #111827;
 }
 .title-info {
     display: flex;
@@ -30,9 +29,8 @@ span {
 }
 
 header {
-    background-image: url(header.jpg);
+    background-image:  url(header.png);
     background-size: cover;
-    color: white;
     padding: 6em 3em;
     font-weight: bold;
 }
@@ -41,6 +39,12 @@ a {
     text-decoration: none;
     color: white;
     margin: 0;
+    font-size: 1rem;
+}
+
+.search-container input,
+p {
+    color: #A5A5A5;
 }
 
 
@@ -55,29 +59,35 @@ a {
     display: flex;
     width: 85vw;
     position: absolute;
-    top: 15em;
+    top: 14.4em;
     margin:0 auto ;
-    padding: 5px;
-    background-color: white;
-    border: 1px solid #6B7280;
-    border-radius: 5px;
 }
 
 .search-container input {
     width: 75%;
     overflow: auto;
-    color: #626870;
+    background-color: #2e2e2f;
+    border-radius: 5px 0 0 5px;
     border: none;
+    font-size: 1rem;
+    padding-left: 40px;
+    outline: none;
 }
 .search-container button {
     width: 25%;
     margin: 0;
+    color: white;
+    background-color: #4b4b4b;
     border-radius: 0 5px 5px 0;
+    border: none;
+    padding: 1em;
+    font-size: 1rem;
 }
 .search-container svg {
     height: 20px;
-    background-color: white;
-    border-radius: 5px 0 0 5px;
+    position: relative;
+    top:0.7em;
+    right: -3em;
 }
 
 
@@ -89,6 +99,9 @@ a {
 #movie-list,#watchlist {
     /* padding: 6em 3em; */
     padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .movie {
@@ -97,7 +110,5 @@ a {
     gap: 1.5em;
     padding: 1em;
     align-items: center;
-}
-form {
-    gap: 0;
+    width: 90%;
 }
