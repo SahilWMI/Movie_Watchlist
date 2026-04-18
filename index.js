@@ -28,7 +28,7 @@ async function handleClick(e) {
                 movieArr +=`
             <div class="movie" id="movie">
                 <div class="img-container">
-                    <img class="poster" src="${Poster}" alt="">
+                    <img class="poster" src="${Poster}" >
                 </div>
                 <div class="movie-info">
                     <div class="title-info">
